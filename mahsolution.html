@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Lg{
+            height: 40px;
+            width: 50px;
+            position: relative;
+            left: 5px;
+        }
+        .main{
+            font-size: 20px;
+            font-family: Verdana;
+            color: black;
+            font-weight: bolder;
+        }
+        .main ul{
+            list-style-type: none;
+            float: right;
+        }
+        .main ul li{
+            display: inline-block;
+            font-size: 17px;
+            font-weight: 500;
+            margin: 2px;
+        }
+        .main ul li>a{
+            text-decoration: none;
+            color: black;
+        }
+        .main ul li>a:hover{
+            color: #8553B4;
+        }
+        .sec article{
+            width: 30%;
+            height: 500px;
+            float: left;
+            margin-left: 100px;
+            margin-top: 150px;
+        }
+        .sec article>p{
+            color: black;
+            font-family: Georgia;
+            font-size: 27px;
+            font-weight: bold;
+        }
+        .sec article>a{
+            color: #1b69fa;
+            border: #1b69fa solid 1px;
+            font-family: Georgia;
+            font-size: 18px;
+            padding: 8px;
+            border-radius: 5%;
+            text-decoration: none;
+        }
+        .sec article>a:hover{
+            color: black;
+            background-color: #1b69fa;
+        }
+        .ram{
+            height: 35%;
+            width: 20%;
+            float: right;
+            margin-top: 7%;
+            padding-left: 18%;
+            padding-right: 0%;
+        }
+        .ram div{
+            width: 180px;
+            height: 280px;
+            background-color: #F9E9E9; 
+        }
+        .ram img{
+            height: 330px;
+            width: 250px;
+            position: absolute;
+            top: 35%;
+            right: 16%;
+        }
+        .mike article{
+            width: 60%;
+            float: left;
+        }
+        .mike article>img{
+            height: 300px;
+            width: 280px;
+            position: absolute;
+            top: 800px;
+            left: 270px;
+        }
+        .mike aside{
+            width: 38%;
+            float: right;
+        }
+        .mike aside>p{
+            font-size: 19px;
+            font-family: Georgia;
+            font-weight: 600;
+            position:relative;
+            right: 20%;
+            margin-top: 370px;
+        }
+        h3{
+            position: absolute;
+            top:200%;   
+            left: 5%;
+            font-family: Verdana;
+        }
+        .abc{
+            position: absolute;
+            top:207%;   
+            left: 5%;
+            font-size: 13px;
+            font-family: Verdana;
+        }
+        .aa{
+            height: 280px;
+            width:200px;
+            border: 1px solid rgb(161, 151, 151);
+            border-radius: 5%;
+            position: absolute;
+            left: 70px;
+            top:220%;
+            padding: 15px;
+        }
+        .head{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .aa{
+            font-size: 12px;
+            font-family: verdana;
+            padding-left: 30px;
+            padding-top: 5px;
+        }
+        .aa ul>li{
+            padding: 3px;
+        }
+        .aa a{
+            text-decoration:none;
+            padding: 7px 60px;
+            border-radius: 10%;
+            color:white;
+            font-size: 15px;
+            background-color: blue;
+            position: relative;
+            top: 5%;
+            left: 5%;
+            font-family: Georgia;
+        }
+        .aa a:hover{
+            color: black;
+            background-color: white;
+        }
+        .bb{
+            height: 280px;
+            width:200px;
+            border: 1px solid rgb(161, 151, 151);
+            border-radius: 5%;
+            position: absolute;
+            left: 355px;
+            top:220%;
+            padding: 15px;
+        }
+        .bb{
+            font-size: 12px;
+            font-family: verdana;
+            padding-left: 30px;
+            padding-top: 5px;
+        }
+        .bb ul>li{
+            padding: 3px;
+        }
+        .bb a{
+            text-decoration:none;
+            padding: 7px 60px;
+            border-radius: 10%;
+            color:white;
+            font-size: 15px;
+            background-color: blue;
+            position: relative;
+            top: 5%;
+            left: 5%;
+            font-family: Georgia;
+        }
+        .bb a:hover{
+            color: black;
+            background-color: white;
+        }
+        .cc{
+            height: 280px;
+            width:200px;
+            border: 1px solid rgb(161, 151, 151);
+            border-radius: 5%;
+            position: absolute;
+            left: 640px;
+            top:220%;
+            padding: 15px;
+        }
+        .cc{
+            font-size: 12px;
+            font-family: verdana;
+            padding-left: 30px;
+            padding-top: 5px;
+        }
+        .cc ul>li{
+            padding: 3px;
+        }
+        .cc a{
+            text-decoration:none;
+            padding: 7px 60px;
+            border-radius: 10%;
+            color:white;
+            font-size: 15px;
+            background-color: blue;
+            position: relative;
+            top: 5%;
+            left: 5%;
+            font-family: Georgia;
+        }
+        .cc a:hover{
+            color: black;
+            background-color: white;
+        }
+        .dd{
+            height: 280px;
+            width:200px;
+            border: 1px solid rgb(161, 151, 151);
+            border-radius: 5%;
+            position: absolute;
+            left: 925px;
+            top:220%;
+            padding: 15px;
+        }
+        .dd{
+            font-size: 12px;
+            font-family: verdana;
+            padding-left: 30px;
+            padding-top: 5px;
+        }
+        .dd ul>li{
+            padding: 3px;
+        }
+        .dd a{
+            text-decoration:none;
+            padding: 7px 60px;
+            border-radius: 10%;
+            color:white;
+            font-size: 15px;
+            background-color: blue;
+            position: relative;
+            top: 5%;
+            left: 5%;
+            font-family: Georgia;
+        }
+        .dd a:hover{
+            color: black;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+            <img src="./images/logo.PNG" class="Lg">&nbsp;Nebula
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contacts</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Support</a></li>
+        </ul>
+    </div>    
+    <div class="sec">
+        <article>
+            <p>Transform your Space into beautiful masterpiece with our expert interior design services.</p><br>
+            <a href="">Book Now</a>
+        </article>
+        <aside class="ram">
+            <div></div><img src="./images/flower.png">
+        </aside>
+    </div><br>
+    <div class="mike">
+        <article>
+            <img src="./images/beauty-g6b25ec7ff_640.jpg">
+        </article> 
+        <aside>
+            <p>Welcome to our interior design website,where we offer a comprehensive range of services to help you transform your home or office into a beautiful, functional, and comfortable space. Our team of experienced interior designer will work with you every step of the way, from conceptualizing your design to selecting the perfect color oalette, furniture, and decore to bring your vision to life. </p>
+        </aside>
+    </div>
+    <h3>Simple,Transparent pricing</h3>
+    <p class="abc">No contact,No hidden pricing</p>
+    <div class="aa">
+        <p class="head">Intro</p>
+        <b class="side">$19</b> /month
+        <p class="body">For Most Business</p>
+        <ul>
+            <li>All limited place</li>
+            <li>Free consultant</li>
+            <li>Walkin place review</li>
+            <li>All limited place</li>
+            <li>Free consultant</li>
+            <li>Walkin place review</li>
+        </ul>
+        <a href="">Select</a>
+    </div>
+    <div class="bb">
+        <p class="head">Basic</p>
+        <b class="side">$39</b> /month
+        <p class="body">For Most Business</p>
+        <ul>
+            <li>All limited place</li>
+            <li>Free consultant</li>
+            <li>Walkin place review</li>
+            <li>All limited place</li>
+            <li>Free consultant</li>
+            <li>Walkin place review</li>
+        </ul>
+        <a href="">Select</a>
+    </div>
+    <div class="cc">
+        <p class="head">Popular</p>
+        <b class="side">$99</b> /month
+        <p class="body">For Most Business</p>
+        <ul>
+            <li>All limited place</li>
+            <li>Free consultant</li>
+            <li>Walkin place review</li>
+            <li>All limited place</li>
+            <li>Free consultant</li>
+            <li>Walkin place review</li>
+        </ul>
+        <a href="">Select</a>
+    </div>
+    <div class="dd">
+        <p class="head">Enterprise</p>
+        <b class="side">$199</b> /month
+        <p class="body">For Most Business</p>
+        <ul>
+            <li>All limited place</li>
+            <li>Free consultant</li>
+            <li>Walkin place review</li>
+            <li>All limited place</li>
+            <li>Free consultant</li>
+            <li>Walkin place review</li>
+        </ul>
+        <a href="">Select</a>
+    </div>
+</body>
+</html>
